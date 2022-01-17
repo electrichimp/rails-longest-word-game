@@ -1,0 +1,8 @@
+<div class="result-container">
+<div class="result"><%= @result[:message] %></div>
+<div class="result">Grid: <%= @letters.join("-") %></div>
+<div class="result">Palabra: <%= @word %></div>
+<div class="result">Puntaje: <%= @result[:score] %></div>
+<div class="result">Session <%= session[:score] %></div>
+<%= button_to "De nuevo?", new_path,  {method: 'get'}%>
+</div>

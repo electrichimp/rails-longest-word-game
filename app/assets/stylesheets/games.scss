@@ -1,0 +1,79 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+ font-family: 'Roboto Mono', monospace;
+ background-color: blanchedalmond;
+ text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 1000px;
+  margin: 20px auto;
+}
+
+.card {
+  padding: 8px 5px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 0px slateblue;
+  border-radius: 4px;
+  text-align: center;
+  background-color: white;
+}
+
+.input-container {
+  width: 400px;
+  margin: 0px auto;
+  padding: 30px 20px;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+input {
+  font-family: 'Roboto Mono', monospace;
+  border: 2px solid black;
+  box-shadow: 2px 2px 0px slateblue;
+  padding: 5px 8px;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 300px;
+}
+
+input[type=submit] {
+  margin-top: 20px;
+  text-align: center;
+  background-color: slateblue;
+  color: white;
+}
+
+.result-container {
+  margin: 100px auto;
+  border-radius: 5px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  padding: 30px 20px;
+  width: 400px;
+}
+
+.result-container button {
+  border: 2px solid black;
+  box-shadow: 2px 2px 0px slateblue;
+  padding: 10px 15px;
+  color: white;
+  background-color: slateblue;
+}
+
+.result:first-child {
+  background-color: slateblue;
+  color: white;
+  padding: 3px;
+  margin-bottom: 5px;
+}
